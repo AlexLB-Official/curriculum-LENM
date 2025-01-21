@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Mono';
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #7c009b;
+}
+
+/*Modificamos el header, especificamente el es hijo directo del  #page*/
+#page > header{
+    border-bottom: 10px solid black;
+}
+
+header h1 {
+    background-image: url(../imgs/imageProfile.png);
+    background-position: 25px absolute;
+    background-repeat: no-repeat;
+    background-size: 64px;
+    padding: 20px 100px;
+    margin-left: 20px;
+    color: white;
+}
+
+/*Modificando los enlaces*/
+nav {
+    text-align: center;
+    background-color: rgb(131, 1, 1);
+    font-size: 1.2em;
+    border-bottom: 10px solid black;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding-top: 110px;
+    /*top | right | bottom | left*/
+    margin: -1em 10em 1em 10em;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bolder;
+}
+
+
+/*Animaciones de los enlaces*/
+a:hover {
+    border-bottom: 2px solid white;
+    text-shadow: 1px 1px orange;
+}
+
+
+/*Colocando las imagenes correspondientes a cada uno de los enlaces*/
+#estudios {
+    background-image: url(../imgs/estudios.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#conocimientos {
+    background-image: url(../imgs/conocimientos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contacto {
+    background-image: url(../imgs/contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Modificando el apartado de la section*/
+section {
+    background-image: url(../imgs/lgrey008.jpg);
+    display: 100%;
+    display: table;
+    border-bottom: 10px solid black;
+    padding-bottom: 2em;
+}
+
+/*Modificando los article*/
+article {
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 2em;
+    margin-left: 10em;
+    background-color: white;
+    background-size: contain;
+    padding: 20px;
+    float: left;
+}
+
+/*Establezco el tamaño de las imagenes al 100%*/
+img {
+    width: 100%;
+}
+
+/*Modificando el footer*/
+footer {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
